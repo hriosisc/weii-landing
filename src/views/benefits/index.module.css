@@ -1,0 +1,64 @@
+.benefitSection {
+  background-color: #F8F8F8;
+  position: inherit; 
+} 
+
+.sectionContainer {
+  position: relative;
+  z-index: 1000;
+  padding-top: 60px;
+  padding-bottom: 45px;
+  max-width: 1280px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: 0 auto;
+}
+
+.containerHead {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 56px;
+}
+
+.headImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(104px, 104px, 104px);
+  height: clamp(104px, 104px, 104px);
+}
+
+.headTitles {
+  min-height: 148px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.headTitles h1 {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: PoppinsExtraBold;
+  line-height: 1.5;
+  color: #333;
+}
+
+.headTitles h4 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: PoppinsMedium;
+  line-height: 32px;
+  color: #666;
+}
+
+.containerBody {
+  margin-top: 64px;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}

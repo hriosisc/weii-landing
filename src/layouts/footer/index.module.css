@@ -1,0 +1,97 @@
+footer {
+  background-color: #161616;
+}
+
+.footerContainer {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 246px;
+  max-height: 246px;
+  margin: 0 auto;
+  padding: 45px 23px;
+}
+
+.containerFlex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 32px;
+}
+
+.navItem {
+  display: block;
+  margin: 10px 16px;
+  list-style: none;
+}
+
+.navItem a {
+  font-size: 14px;
+  font-family: "PoppinsRegular";
+  font-weight: 500;
+  line-height: 20px;
+  color: #CCC;
+  text-decoration: none;
+  transition: color 200ms linear;
+}
+
+.navItem:hover a {
+  color: #FFF;
+  transition: color 200ms linear;
+}
+
+.termsContainer a {
+  font-family: "PoppinsMedium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.storesContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 58px;
+  min-height: 59px;
+  padding: 8px 330px 8px 64px;
+}
+
+.storesContainer img {
+  max-width: 149px;
+  max-height: 43px;
+}
+
+.socialMediaContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyrightContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 18px;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyrightContainer i {
+  font-size: 13px;
+}
+
+.copyrightContainer span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  font-style: normal;
+  font-family: "PoppinsMedium";
+  color: #999;
+}

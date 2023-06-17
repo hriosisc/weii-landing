@@ -1,0 +1,54 @@
+.heroSection {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100vw;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 24px;  
+  max-width: 1280px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: 0 auto;
+}
+
+.containerArticle {
+  min-width: 548px;
+  max-width: 548px;
+  display: block;
+  position: relative;
+}
+
+.containerArticle h1 {
+  font-family: PoppinsBold;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  margin-left: 48px;
+  color: #1A1A1A;
+}
+
+.containerArticle p {
+  display: block;
+  margin-top: 8px;
+  margin-left: 48px;
+
+  font-family: PoppinsRegular;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+}
+
+.articleImages {
+  position: relative;
+  margin-top: 40px;
+}
+
+.articleImages img {
+  position: absolute;
+  z-index: 600;
+}

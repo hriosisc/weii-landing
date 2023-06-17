@@ -1,0 +1,57 @@
+.bottomSection {
+  position: relative;
+}
+
+.backgroundImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 698px;
+  max-height: 698px;
+  opacity: 0.25;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 600; 
+}
+
+.sectionContainer {
+  padding-top: 58px;
+  margin-bottom: 48px;
+  position: relative;
+  z-index: 1020;
+}
+
+.headTitle {
+  min-height: 111px;
+  margin-bottom: 24px;
+}
+
+.headTitle h1 {
+  font-family: PoppinsExtraBold;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #1A1A1A;
+  margin-bottom: 8px;
+}
+
+.headTitle p {
+  font-family: PoppinsRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #666666;
+}
+
+.containerBody {
+  display: flex;
+  justify-content: center;
+}

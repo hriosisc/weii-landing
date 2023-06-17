@@ -1,0 +1,85 @@
+.opinionSection {
+  background-color: #F8F8F8;
+}
+
+.sectionContainer {
+  padding-top: 45px;
+  padding-bottom: 48px;
+  max-width: 1280px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: 0 auto;
+}
+
+
+.containerStores {
+  margin-top: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.containerOpinions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.opinionCard {
+  width: 100%;
+  max-width: 312px;
+  padding: 24px 24px 24px 10px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.cardHead {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.headName {
+  margin-right: auto;
+  font-family: PoppinsMedium;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333;
+}
+
+.headRating {
+  display: block;
+  border-radius: 16px;
+  background-color: #e6e6e6;
+  padding: 4px 12px 4px 12px;
+  font-family: PoppinsRegular;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333;
+}
+
+.cardBody {
+  margin-top: 16px;
+}
+
+.cardBody p {
+  font-family: PoppinsRegular;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #666;
+}
+
+.cardBody span {
+  display: block;
+  margin-top: 16px;
+  text-align: end;
+
+  font-size: 12px;
+  font-family: PoppinsRegular;
+  line-height: 16px;
+  font-weight: 400;
+}

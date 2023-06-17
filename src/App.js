@@ -1,9 +1,11 @@
-function App() {
-  return (
-    <div>
-      <h1>Weii - Landing Page</h1>
-    </div>
-  );
-}
+import { BrowserRouter } from "react-router-dom";
+import RoutesPages from "./router";
+import "./css/index.css";
 
-export default App;
+export default function App() {
+  return (
+    <BrowserRouter>
+      <RoutesPages />
+    </BrowserRouter>
+  );
+} 

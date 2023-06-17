@@ -1,0 +1,82 @@
+section.startNowSection {
+  width: 100%; 
+}
+
+.sectionContainer {
+  padding-top: 24px;
+  padding-bottom: 118px;
+  max-width: 1280px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: 0 auto;
+}
+
+.containerHead {
+  min-height: 78px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.headTitle {
+  font-family: PoppinsExtraBold;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 60px;
+  text-align: center;
+}
+
+.containerBody {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.containerBody>div {
+  min-width: 546px;
+  max-width: 546px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerBody>div img {
+  margin-bottom: 24px;
+}
+
+.filledButton,
+.roundedButton {
+  width: 100%;
+  max-width: 358px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  border: none;
+  padding: 12px, 24px, 12px, 24px
+}
+
+.filledButton {
+  background-color: #FBAA29;
+}
+
+.roundedButton {
+  border: 1px solid #FBAA29;
+  background-color: transparent;
+}
+
+.filledButton:hover,
+.roundedButton:hover {
+  cursor: pointer;
+}
+
+.filledButton span,
+.roundedButton span {
+  font-family: PoppinsSemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #2B1E08;
+}

@@ -1,0 +1,11 @@
+main {
+  position: relative;
+  display: block;
+  margin-top: 72px;
+}
+
+.mainContainer {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}

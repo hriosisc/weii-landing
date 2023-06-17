@@ -1,0 +1,176 @@
+.formContainer {
+  background-color: #F8F8F8;
+  min-width: 548px;
+  max-width: 548px;
+  min-height: 483px;
+  max-height: 483px;
+  position: relative;
+  border-radius: 16px;
+}
+
+.containerTabs {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.tabOption {
+  min-height: 65px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option {
+  width: 100%;
+  background-color: t;
+}
+
+.optionButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+  height: 65px;
+  background-color: #EBEBEB;
+  border: none;
+  position: relative;
+}
+
+.optionButton:hover {
+  cursor: pointer;
+}
+
+.containerTabs .tabOption:first-child .optionButton {
+  border-top-left-radius: 16px;
+}
+
+.containerTabs .tabOption:last-child .optionButton {
+  border-top-right-radius: 16px;
+}
+
+.optionButton span {
+  font-family: PoppinsRegular;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.optionButton:disabled::before {
+  content: "";
+  width: 24px;
+  height: 3px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FBAA29;
+}
+
+.optionButton:disabled {
+  background: transparent;
+}
+
+.optionButton:not(:disabled) span {
+  color: #666;
+}
+
+.optionButton:disabled span {
+  color: #1A1A1A;
+}
+
+
+.containerBody {
+  padding: 40px 48px;
+}
+
+.formComponent h1 {
+  font-family: PoppinsBold;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.formComponent form {
+  margin-top: 24px;
+}
+
+.formGroup {
+  display: block;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.formGroup label {
+  font-family: PoppinsMedium;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.formGroup input {
+  display: block;
+  min-height: 56px;
+  width: 100%;
+  border: 1px solid #999;
+  border-radius: 8px;
+  padding: 8px 0px 8px 40px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: PoppinsRegular;
+  font-weight: 400;
+  color: #333;
+}
+
+.formGroup input::placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: PoppinsRegular;
+  font-weight: 400;
+  color: #aeaeae;
+}
+
+.groupInput {
+  position: relative;
+}
+
+.groupInput i {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  color: #FBAA29;
+}
+
+form .submitButton {
+  margin-top: 24px;
+  width: 100%;
+  background-color: #FBAA29;
+  padding: 12px 24px 12px 16px;
+  border-radius: 24px;
+  border: 1px solid #FBAA29;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+form .submitButton:hover {
+  cursor: pointer;
+}
+
+form .submitButton span {
+  font-family: PoppinsSemiBold;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
