@@ -174,3 +174,21 @@ form .submitButton span {
   line-height: 24px;
   font-weight: 600;
 }
+
+@media screen and (max-width: 480px) {
+
+  .formContainer {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 467px;
+    max-height: 467px;
+    z-index: 1000;
+  }
+
+  .formComponent h1 {
+    font-family: PoppinsSemiBold;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+}

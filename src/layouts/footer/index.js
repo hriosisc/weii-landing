@@ -1,6 +1,6 @@
 import React from 'react';
 import ui from "./index.module.css";
-import { icons } from "../../constants/icons/";
+import { icons, images } from "../../constants/icons/";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -9,8 +9,8 @@ export default function Footer() {
       <div className={ui.footerContainer}>
         <div className={ui.containerFlex}>
           <div className={ui.storesContainer}>
-            <Link to={"#"}><img src={icons.googlesm} alt="googleIcon" /></Link>
-            <Link to={"#"}><img src={icons.appstoresm} alt="appStoreIcon" /></Link>
+            <Link to={"#"}><img src={images.googleApp} alt="googleIcon" /></Link>
+            <Link to={"#"}><img src={images.appStore} alt="appStoreIcon" /></Link>
           </div>
           <ul className={ui.navigation}>
             <li className={ui.navItem}><Link to={"#"}>Privacidad</Link></li>

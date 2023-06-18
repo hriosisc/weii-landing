@@ -15,7 +15,7 @@
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: 600; 
+  z-index: 600;
 }
 
 .sectionContainer {
@@ -54,4 +54,37 @@
 .containerBody {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+
+  .bottomSection {
+    background-color: #F8F8F8;
+  }
+
+  .backgroundImage {
+    max-height: unset;
+  }
+
+  .sectionContainer {
+    padding: 24px 8px;
+    margin-bottom: 0;
+  }
+
+  .containerBody {
+    flex-direction: column;
+  }
+
+  .bodyImage img {
+    display: block;
+    width: 100%;
+  }
+
+  .storeApp {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    gap: 16px;
+  }
 }

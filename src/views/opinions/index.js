@@ -1,17 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ui from "./index.module.css";
-import { icons, images } from "../../constants/icons"
+import { images } from "../../constants/icons"
 
-export default function OpinionsView() {
+export default function OpinionsView({ breakpoint }) {
 
   const { avatar } = images;
+  const isSmall = breakpoint === "sm";
 
-  const opinionList = [
-    { pic: avatar, name: "Guy Hawkins|", rating: "4.0", parraf: "consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt", date: " 12 Ene 2022" },
-    { pic: avatar, name: "Guy Hawkins", rating: "4.0", parraf: "consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt", date: " 12 Ene 2022" },
-    { pic: avatar, name: "Guy Hawkins", rating: "4.0", parraf: "consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt", date: " 12 Ene 2022" }
-  ]
+  const opinionList = isSmall
+    ? [{ pic: avatar, name: "Guy Hawkins", rating: "4.0", parraf: "consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt", date: " 12 Ene 2022" }]
+    : [
+      { pic: avatar, name: "Guy Hawkins", rating: "4.0", parraf: "consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt", date: " 12 Ene 2022" },
+      { pic: avatar, name: "Guy Hawkins", rating: "4.0", parraf: "consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt", date: " 12 Ene 2022" },
+      { pic: avatar, name: "Guy Hawkins", rating: "4.0", parraf: "consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt", date: " 12 Ene 2022" }
+    ]
 
   return (
     <section className={ui.opinionSection}>
@@ -37,10 +40,14 @@ export default function OpinionsView() {
               })
             }
           </div>
-          <div className={ui.containerStores}>
-            <Link to="#"><img src={icons.googlemd} alt="storeIcon" /></Link>
-            <Link to="#"><img src={icons.appstoresm} alt="storeIcon" /></Link>
-          </div>
+          {
+            isSmall
+              ? null
+              : (<div className={ui.containerStores}>
+                <Link to="#"><img src={images.googleApp} alt="storeIcon" /></Link>
+                <Link to="#"><img src={images.appStore} alt="storeIcon" /></Link>
+              </div>)
+          }
         </div>
       </div>
     </section>

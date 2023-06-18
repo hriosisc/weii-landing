@@ -84,3 +84,16 @@ nav {
 .borderedButton:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+  .headerContainer nav {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .burgerMenu {
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
+}

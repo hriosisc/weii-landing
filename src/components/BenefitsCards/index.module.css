@@ -23,7 +23,6 @@
 }
 
 .cardContent p {
-
   font-family: PoppinsRegular;
   font-weight: 400;
   font-size: 14px;
@@ -31,4 +30,38 @@
   text-align: center;
   margin-top: 8px;
   color: #666;
+}
+
+@media screen and (max-width: 480px) {
+
+  .card {
+    max-width: 244px;
+  }
+
+  .cards {
+    min-width: 1024px;
+    gap: 16px;
+    margin-right: 48px;
+  }
+
+  .cardContent {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+  }
+
+  .cardContent h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .cardContent p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .cardImage img {
+    display: block;
+    width: 100%;
+  }
 }

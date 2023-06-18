@@ -1,5 +1,5 @@
 section.startNowSection {
-  width: 100%; 
+  width: 100%;
 }
 
 .sectionContainer {
@@ -79,4 +79,33 @@ section.startNowSection {
   font-weight: 600;
   line-height: 24px;
   color: #2B1E08;
+}
+
+@media screen and (max-width: 480px) {
+  .sectionContainer {
+    padding: 24px;
+    max-width: 100vw;
+  }
+
+  .containerHead h1 {
+    font-family: PoppinsBold;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  .containerBody {
+    flex-direction: column;
+  }
+
+  .containerBody>div {
+    flex-direction: column-reverse;
+    min-width: 100%;
+    max-width: 100%;
+    gap: 16px;
+  }
+
+  .containerBody div img {
+    width: 100%;
+  }
 }

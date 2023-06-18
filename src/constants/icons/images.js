@@ -11,6 +11,11 @@ import ParachuteImage from "../../assets/images/parachute-box.svg";
 import DeliveryManCircle from "../../assets/images/deliveryManCircle.svg";
 import ShieldImage from "../../assets/images/shield.svg";
 import PhonesGroupImage from "../../assets/images/phonesGroup.png";
+import DeliverManHero from "../../assets/images/delivermanSmall.png";
+import PhonesGroupSmall from "../../assets/images/phonesSm.png";
+import AppStoreIcon from "../../assets/images/AppStoreIcon.png";
+import GoogleAppIcon from "../../assets/images/GooglePlayIcon.png";
+
 // import BackgroundImage from "../../assets/images/bg.png";
 // import BackgroundImage from "../../assets/images/bg.png";
 // import BackgroundImage from "../../assets/images/bg.png";
@@ -28,7 +33,11 @@ const images = {
   parachute: ParachuteImage,
   deliveryMan: DeliveryManCircle,
   shield: ShieldImage,
-  phoneslg: PhonesGroupImage
+  phoneslg: PhonesGroupImage,
+  phonessm: PhonesGroupSmall,
+  deliverHero: DeliverManHero,
+  appStore: AppStoreIcon,
+  googleApp: GoogleAppIcon
 }
 
 export default images;

@@ -7,7 +7,7 @@
 .sectionContainer {
   display: flex;
   flex-flow: row nowrap;
-  gap: 24px;  
+  gap: 24px;
   max-width: 1280px;
   padding-left: 80px;
   padding-right: 80px;
@@ -51,4 +51,73 @@
 .articleImages img {
   position: absolute;
   z-index: 600;
+}
+
+.heroTextImage {
+  position: relative;
+  padding-top: 28px;
+  min-height: 177px;
+  margin-top: 16px;
+}
+
+.heroTextImage p {
+  display: block;
+  max-width: 137px;
+}
+
+@media screen and (max-width: 480px) {
+  .heroSection {
+    padding: 0;
+  }
+
+  .sectionContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 24px;
+    max-width: 100vw;
+    gap: 16px;
+  }
+
+  .containerArticle h1 {
+    font-family: PoppinsSemiBold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    margin-left: unset;
+    color: #333;
+  }
+
+  .containerArticle p {
+    display: block;
+    margin-top: 8px;
+    font-family: PoppinsMedium;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    margin-left: 0;
+  }
+
+  .containerArticle {
+    min-width: unset;
+    max-width: unset;
+    display: block;
+    position: relative;
+  }
+
+  .articleImages {
+    position: absolute;
+    margin-top: unset;
+    left: 28px;
+    top: 0;
+    z-index: 0;
+  }
+
+  .articleImages img {
+    position: relative;
+    max-width: 376px;
+    z-index: 600;
+    ;
+  } 
 }

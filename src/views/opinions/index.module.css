@@ -74,12 +74,23 @@
 }
 
 .cardBody span {
+  font-family: PoppinsRegular;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: end;
+  line-height: 16px;
+  color: #666;
   display: block;
   margin-top: 16px;
-  text-align: end;
+}
 
-  font-size: 12px;
-  font-family: PoppinsRegular;
-  line-height: 16px;
-  font-weight: 400;
+@media screen and (max-width: 480px) {
+  
+  .sectionContainer {
+    padding: 24px 1px;
+  }
+
+  .containerOpinions {
+    justify-content: center;
+  }
 }

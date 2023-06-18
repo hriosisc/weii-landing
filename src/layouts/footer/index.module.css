@@ -31,7 +31,7 @@ footer {
 
 .navItem a {
   font-size: 14px;
-  font-family: "PoppinsRegular";
+  font-family: PoppinsRegular;
   font-weight: 500;
   line-height: 20px;
   color: #CCC;
@@ -45,7 +45,7 @@ footer {
 }
 
 .termsContainer a {
-  font-family: "PoppinsMedium";
+  font-family: PoppinsMedium;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -92,6 +92,49 @@ footer {
   font-weight: 500;
   line-height: 20px;
   font-style: normal;
-  font-family: "PoppinsMedium";
+  font-family: PoppinsMedium;
   color: #999;
+}
+
+@media screen and (max-width: 480px) {
+
+  .footerContainer {
+    max-width: unset;
+    min-height: unset;
+    max-height: unset;
+    padding: 16px 24px;
+  }
+
+  .containerFlex {
+    padding: 16px 0px;
+    flex-flow: column nowrap;
+    gap: 8px;
+  }
+
+  .storesContainer {
+    gap: unset;
+    min-height: unset;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .navigation {
+    gap: unset;
+    justify-content: space-between;
+  }
+  .navItem  {
+    margin: 10px 0;
+  }  
+  .navItem a {
+    font-size: 14px;
+    font-family: PoppinsMedium;
+    font-weight: 500;
+    line-height: 20px; 
+  }
+
+  .copyrightContainer {
+    gap: unset;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
 }
