@@ -36,9 +36,7 @@ function BenefitCards() {
           const { pic, title, parraf } = item;
           return (
             <div className={ui.card} key={index}>
-              <div className={ui.cardImage}>
-                <img src={pic} alt="cardImage" />
-              </div>
+              <div className={ui.cardImage} style={{ backgroundImage: `url(${pic})` }}></div>
               <div className={ui.cardContent}>
                 <h4>{title}</h4>
                 <p>{parraf}</p>
